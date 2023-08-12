@@ -20,7 +20,7 @@ execute as @a[scores={death=0},tag=mura] run scoreboard players add @e[type=armo
 execute as @a[scores={death=0},team=jinro] run scoreboard players add @e[type=armor_stand,tag=game] kurokati 1
 execute as @e[type=armor_stand,tag=game,scores={kurokati=0}] run function wrwrd:murakati
 execute as @e[type=armor_stand,tag=game,scores={murakati=0}] run function wrwrd:kurokati
-execute as @e[type=armor_stand,tag=game,tag=st] run execute as @e[type=item,nbt={Item:{id:"minecraft:sunflower",tag:{display:{Name:'[{"text":"§0§l停電スイッチ"}]'}},Count:1b}}] run function wrwrd:teiden
+execute as @e[type=armor_stand,tag=game,tag=st] run execute at @e[type=item,nbt={Item:{id:"minecraft:sunflower",tag:{display:{Name:'[{"text":"§0§l停電スイッチ"}]'}},Count:1b}}] run function wrwrd:teiden
 execute as @e[type=armor_stand,tag=game,tag=st] run execute at @e[type=item,nbt={Item:{id:"minecraft:end_crystal",tag:{display:{Name:'[{"text":"§eプロビデンスの眼光"}]'}},Count:1b}}] run function wrwrd:konesima
 execute as @e[type=armor_stand,tag=game,tag=st] run execute at @e[type=item,nbt={Item:{id:"minecraft:lightning_rod",tag:{display:{Name:'[{"text":"§6避雷針"}]'}},Count:1b}}] run function wrwrd:hirai
 execute at @e[type=armor_stand,tag=hirai] run particle end_rod ~ ~ ~ 0.1 0.3 0.1 0 1 normal

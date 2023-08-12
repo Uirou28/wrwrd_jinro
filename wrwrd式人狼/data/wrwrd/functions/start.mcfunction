@@ -3,6 +3,8 @@ kill @e[type=item]
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule keepInventory false
+gamerule showDeathMessages false
+gamerule sendCommandFeedback false
 difficulty peaceful
 scoreboard objectives remove player
 scoreboard objectives add player dummy
@@ -14,10 +16,7 @@ kill @e[type=armor_stand,tag=game]
 summon armor_stand ~ -62 ~ {Invisible:1b,Tags:["game"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
 scoreboard players set @a death 0
 clear @a
-item replace entity @a[tag=op] container.8 with carrot_on_a_stick{display: {Name: '[{"text":"creative"}]', Lore: ['[{"text":"使うとcreativeになるよ"}]']},rc:1} 1
-item replace entity @a[tag=op] container.7 with carrot_on_a_stick{display: {Name: '[{"text":"adventure"}]', Lore: ['[{"text":"使うとadventureになるよ"}]']},rc:2} 1
-item replace entity @a[tag=op] container.35 with carrot_on_a_stick{display: {Name: '[{"text":"start"}]', Lore: ['[{"text":"使うと始まるよ"}]']},rc:3} 1
-item replace entity @a[tag=op] container.34 with carrot_on_a_stick{display: {Name: '[{"text":"finish"}]', Lore: ['[{"text":"使うと強制終了"}]']},rc:4} 1
+function wrwrd:load
 tag @a add item
 scoreboard objectives remove time
 scoreboard objectives add time dummy
