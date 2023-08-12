@@ -1,0 +1,9 @@
+function wrwrd:bytl
+function wrwrd:speed
+function wrwrd:tyouyaku
+function wrwrd:tate
+function wrwrd:tear
+function wrwrd:totem
+function wrwrd:switch
+function wrwrd:imb
+function wrwrd:hiraigive

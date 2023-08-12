@@ -1,0 +1,11 @@
+tellraw @a[team=yogen] [{"selector":"@a[tag=player1]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen1"}}]
+tellraw @a[team=yogen] [{"selector":"@a[tag=player2]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen2"}}]
+tellraw @a[team=yogen] [{"selector":"@a[tag=player3]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen3"}}]
+tellraw @a[team=yogen] [{"selector":"@a[tag=player4]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen4"}}]
+tellraw @a[team=yogen] [{"selector":"@a[tag=player5]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen5"}}]
+tellraw @a[team=yogen] [{"selector":"@a[tag=player6]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen6"}}]
+tellraw @a[team=yogen] [{"selector":"@a[tag=player7]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen7"}}]
+tellraw @a[team=yogen] [{"selector":"@a[tag=player8]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen8"}}]
+tellraw @a[team=yogen] [{"selector":"@a[tag=player9]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen9"}}]
+tellraw @a[team=yogen] [{"selector":"@a[tag=player10]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen10"}}]
+clear @s written_book

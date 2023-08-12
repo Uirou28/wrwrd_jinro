@@ -1,0 +1,1 @@
+tellraw @a[team=jinro] [{"selector":"@a[team=jinro]"},{"text":"が人狼の仲間です","bold":true}]
