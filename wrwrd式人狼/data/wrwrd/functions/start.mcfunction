@@ -9,6 +9,8 @@ difficulty peaceful
 effect clear @a
 scoreboard objectives remove player
 scoreboard objectives add player dummy
+scoreboard objectives remove kaigitime
+scoreboard objectives add kaigitime dummy
 tag @a add player
 gamemode adventure @a
 scoreboard objectives remove death

@@ -1,5 +1,15 @@
 kill @e[type=armor_stand,tag=game]
 kill @e[type=armor_stand,tag=hirai]
+kill @e[type=armor_stand,tag=kaigi1]
+kill @e[type=armor_stand,tag=kaigi2]
+kill @e[type=armor_stand,tag=kaigi3]
+kill @e[type=armor_stand,tag=kaigi4]
+kill @e[type=armor_stand,tag=kaigi5]
+kill @e[type=armor_stand,tag=kaigi6]
+kill @e[type=armor_stand,tag=kaigi7]
+kill @e[type=armor_stand,tag=kaigi8]
+kill @e[type=armor_stand,tag=kaigi9]
+kill @e[type=armor_stand,tag=kaigia]
 tag @a remove player
 tag @a remove player1
 tag @a remove player2
