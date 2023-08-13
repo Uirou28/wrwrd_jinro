@@ -7,3 +7,4 @@ function wrwrd:totem
 function wrwrd:switch
 function wrwrd:imb
 function wrwrd:hiraigive
+function wrwrd:enmaku

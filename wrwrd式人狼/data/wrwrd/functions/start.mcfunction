@@ -36,4 +36,5 @@ scoreboard objectives remove murakati
 scoreboard objectives add murakati dummy
 scoreboard objectives remove kurokati
 scoreboard objectives add kurokati dummy
+scoreboard players set @e[type=armor_stand,tag=kaigi] kaigitime 0
 give @a written_book{display:{Name:'{"text":"緊急スイッチ","color":"dark_gray","bold":true}'},HideFlags:39,title:"緊急スイッチ",author:"GM",pages:['[{"text":"クリックで会議開始","bold":true,"clickEvent":{"action":"run_command","value":"/execute as @e[type=armor_stand,tag=kaigi,scores={kaigitime=0}] run function wrwrd:kaigi"}}]']} 1
