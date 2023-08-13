@@ -42,3 +42,5 @@ team remove tantei
 team remove yogen
 tag @a remove mura
 function wrwrd:load
+gamerule sendCommandFeedback true
+kill @e[type=armor_stand,tag=enmaku]

@@ -1,0 +1,11 @@
+tp @a[tag=player1] @e[type=armor_stand,limit=1,tag=kaigi1]
+tp @a[tag=player2] @e[type=armor_stand,limit=1,tag=kaigi2]
+tp @a[tag=player3] @e[type=armor_stand,limit=1,tag=kaigi3]
+tp @a[tag=player4] @e[type=armor_stand,limit=1,tag=kaigi4]
+tp @a[tag=player5] @e[type=armor_stand,limit=1,tag=kaigi5]
+tp @a[tag=player6] @e[type=armor_stand,limit=1,tag=kaigi6]
+tp @a[tag=player7] @e[type=armor_stand,limit=1,tag=kaigi7]
+tp @a[tag=player8] @e[type=armor_stand,limit=1,tag=kaigi8]
+tp @a[tag=player9] @e[type=armor_stand,limit=1,tag=kaigi9]
+tp @a[tag=player10] @e[type=armor_stand,limit=1,tag=kaigia]
+scoreboard players set @e[type=armor_stand,tag=kaigi] kaigitime 0

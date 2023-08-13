@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["kaigi"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
