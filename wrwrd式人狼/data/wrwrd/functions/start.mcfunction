@@ -14,7 +14,7 @@ gamemode adventure @a
 scoreboard objectives remove death
 scoreboard objectives add death deathCount
 kill @e[type=armor_stand,tag=game]
-summon armor_stand ~ -62 ~ {Invisible:1b,Tags:["game"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
+summon armor_stand 0 0 0 {Invisible:1b,Tags:["game"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
 scoreboard players set @a death 0
 clear @a
 function wrwrd:load
