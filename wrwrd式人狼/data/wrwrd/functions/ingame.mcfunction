@@ -21,8 +21,8 @@ execute as @a[scores={death=0},tag=mura] run scoreboard players add @e[type=armo
 execute as @a[scores={death=0},team=jinro] run scoreboard players add @e[type=armor_stand,tag=game] kurokati 1
 execute as @e[type=armor_stand,tag=game,scores={kurokati=0}] run function wrwrd:murakati
 execute as @e[type=armor_stand,tag=game,scores={murakati=0}] run function wrwrd:kurokati
-execute as @e[type=armor_stand,tag=game,tag=st] run execute as @e[type=item,nbt={Item:{id:"minecraft:sunflower",tag:{display:{Name:'[{"text":"§0§l停電スイッチ"}]'}},Count:1b}}] at @s run function wrwrd:teiden
-execute as @e[type=armor_stand,tag=game,tag=st] run execute at @e[type=item,nbt={Item:{id:"minecraft:end_crystal",tag:{display:{Name:'[{"text":"§eプロビデンスの眼光"}]'}},Count:1b}}] at @s run function wrwrd:konesima
+execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:sunflower",tag:{display:{Name:'[{"text":"§0§l停電スイッチ"}]'}},Count:1b}}] at @s run function wrwrd:teiden
+execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:end_crystal",tag:{display:{Name:'[{"text":"§eプロビデンスの眼光"}]'}},Count:1b}}] at @s run function wrwrd:konesima
 function wrwrd:dohirai
 function wrwrd:doenmaku
 scoreboard players add @e[type=armor_stand,tag=kaigi,tag=st] kaigitime 1

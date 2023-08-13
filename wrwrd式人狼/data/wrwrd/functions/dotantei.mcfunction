@@ -8,4 +8,4 @@ tellraw @a[team=tantei] [{"selector":"@a[tag=player7]"},{"text":"を§l§1[占�
 tellraw @a[team=tantei] [{"selector":"@a[tag=player8]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:tan8"}}]
 tellraw @a[team=tantei] [{"selector":"@a[tag=player9]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:tan9"}}]
 tellraw @a[team=tantei] [{"selector":"@a[tag=player10]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:tan10"}}]
-clear @s written_book{display:{Name:'{"text":"役職本"}'}}
+clear @s written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'}}
