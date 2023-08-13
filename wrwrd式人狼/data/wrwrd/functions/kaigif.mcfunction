@@ -19,4 +19,5 @@ kill @e[type=armor_stand,tag=kaigi8]
 kill @e[type=armor_stand,tag=kaigi9]
 kill @e[type=armor_stand,tag=kaigia]
 scoreboard players set @e[type=armor_stand,tag=kaigi] kaigitime 0
+tag @e[type=armor_stand,tag=kaigi,tag=st] remove st
 give @a bow{display:{Name:'{"text":"§l§2一撃弓"}',Lore:['{"text":"我が陣営を勝利へ導く弓","color":"dark_purple","bold":true}']},HideFlags:39,RepairCost:10000,Unbreakable:1b,Enchantments:[{id:"minecraft:infinity",lvl:1s},{id:"minecraft:power",lvl:255s}]} 1

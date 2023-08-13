@@ -8,4 +8,4 @@ tellraw @a[team=yogen] [{"selector":"@a[tag=player7]"},{"text":"を§l§1[占う
 tellraw @a[team=yogen] [{"selector":"@a[tag=player8]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen8"}}]
 tellraw @a[team=yogen] [{"selector":"@a[tag=player9]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen9"}}]
 tellraw @a[team=yogen] [{"selector":"@a[tag=player10]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function wrwrd:yogen10"}}]
-clear @s written_book
+clear @s written_book{display:{Name:'{"text":"役職本"}'}}

@@ -10,5 +10,5 @@ execute at @a[tag=player8] run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["kai
 execute at @a[tag=player9] run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["kaigi9"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
 execute at @a[tag=player10] run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["kaigia"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
 tp @a @e[type=armor_stand,tag=kaigi,limit=1]
-scoreboard players add @e[type=armor_stand,tag=kaigi] kaigitime 1
-execute as @e[type=armor_stand,tag=kaigi,scores={kaigitime=1200}] run function wrwrd:kaigif
+tag @e[type=armor_stand,tag=kaigi] add st
+clear @s written_book{display:{Name:'{"text":"緊急スイッチ"}'}}
