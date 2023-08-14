@@ -10,6 +10,8 @@ kill @e[type=armor_stand,tag=kaigi7]
 kill @e[type=armor_stand,tag=kaigi8]
 kill @e[type=armor_stand,tag=kaigi9]
 kill @e[type=armor_stand,tag=kaigia]
+kill @e[type=armor_stand,tag=sitai]
+tag @a remove kansen
 tag @a remove player
 tag @a remove player1
 tag @a remove player2
