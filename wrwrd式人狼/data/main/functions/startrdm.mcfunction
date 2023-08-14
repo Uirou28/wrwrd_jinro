@@ -19,7 +19,7 @@ tag @e[type=armor_stand,tag=spawn0,limit=1] add spawn9
 tag @e[type=armor_stand,tag=spawn9] remove spawn0
 tag @e[type=armor_stand,tag=spawn0,limit=1] add spawna
 tag @e[type=armor_stand,tag=spawna] remove spawn0
-function wrwrd:start
+function main:start
 tp @a[tag=player1] @e[type=armor_stand,limit=1,tag=spawn1]
 tp @a[tag=player2] @e[type=armor_stand,limit=1,tag=spawn2]
 tp @a[tag=player3] @e[type=armor_stand,limit=1,tag=spawn3]

@@ -1,0 +1,11 @@
+tellraw @a[team=tantei] [{"selector":"@a[tag=player1]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan1"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player2]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan2"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player3]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan3"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player4]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan4"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player5]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan5"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player6]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan6"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player7]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan7"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player8]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan8"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player9]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan9"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player10]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan10"}}]
+clear @s written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'}}

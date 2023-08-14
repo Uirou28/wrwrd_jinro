@@ -12,6 +12,8 @@ kill @e[type=armor_stand,tag=kaigi9]
 kill @e[type=armor_stand,tag=kaigia]
 kill @e[type=armor_stand,tag=sitai]
 tag @a remove kansen
+tag @a remove yetyogen
+tag @a remove yettan
 tag @a remove player
 tag @a remove player1
 tag @a remove player2
@@ -38,6 +40,9 @@ tag @e remove spawna
 scoreboard objectives remove player
 scoreboard objectives remove murakati
 scoreboard objectives remove kurokati
+scoreboard objectives remove yukidama
+scoreboard objectives remove enmakutime
+scoreboard objectives remove kaigitime
 gamemode creative @a
 scoreboard objectives remove game
 scoreboard objectives remove death
@@ -53,6 +58,6 @@ team remove simin
 team remove tantei
 team remove yogen
 tag @a remove mura
-function wrwrd:load
+function main:load
 gamerule sendCommandFeedback true
 kill @e[type=armor_stand,tag=enmaku]

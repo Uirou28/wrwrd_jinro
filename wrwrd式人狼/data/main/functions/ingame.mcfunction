@@ -19,14 +19,14 @@ execute as @a run scoreboard players add @e[type=armor_stand,tag=game] player 1
 gamemode spectator @a[scores={death=1..}]
 execute as @a[scores={death=0},tag=mura] run scoreboard players add @e[type=armor_stand,tag=game] murakati 1
 execute as @a[scores={death=0},team=jinro] run scoreboard players add @e[type=armor_stand,tag=game] kurokati 1
-execute as @e[type=armor_stand,tag=game,scores={kurokati=0}] run function wrwrd:murakati
-execute as @e[type=armor_stand,tag=game,scores={murakati=0}] run function wrwrd:kurokati
-execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:sunflower",tag:{display:{Name:'[{"text":"§0§l停電スイッチ"}]'}},Count:1b}}] at @s run function wrwrd:teiden
-execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:end_crystal",tag:{display:{Name:'[{"text":"§eプロビデンスの眼光"}]'}},Count:1b}}] at @s run function wrwrd:konesima
-function wrwrd:dohirai
-function wrwrd:doenmaku
+execute as @e[type=armor_stand,tag=game,scores={kurokati=0}] run function main:murakati
+execute as @e[type=armor_stand,tag=game,scores={murakati=0}] run function main:kurokati
+execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:sunflower",tag:{display:{Name:'[{"text":"§0§l停電スイッチ"}]'}},Count:1b}}] at @s run function item:teiden
+execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:end_crystal",tag:{display:{Name:'[{"text":"§eプロビデンスの眼光"}]'}},Count:1b}}] at @s run function item:konesima
+function item:dohirai
+function item:doenmaku
 scoreboard players add @e[type=armor_stand,tag=kaigi,tag=st] kaigitime 1
-execute as @e[type=armor_stand,tag=kaigi,scores={kaigitime=1200..}] run function wrwrd:kaigif
+execute as @e[type=armor_stand,tag=kaigi,scores={kaigitime=1200..}] run function main:kaigif
 execute at @a[nbt={Health:0f},tag=!kansen] run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["sitai"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
 tag @a[nbt={Health:0f}] add kansen
 execute at @e[type=armor_stand,tag=sitai] run particle minecraft:block redstone_block ~ ~ ~ 1 1 1 1 20 force

@@ -1,0 +1,10 @@
+function item:bytl
+function item:speed
+function item:tyouyaku
+function item:tate
+function item:tear
+function item:totem
+function item:switch
+function item:imb
+function item:hiraigive
+function item:enmaku

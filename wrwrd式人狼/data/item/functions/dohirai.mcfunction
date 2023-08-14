@@ -1,4 +1,4 @@
-execute as @e[type=armor_stand,tag=game,tag=st] run execute at @e[type=item,nbt={Item:{id:"minecraft:lightning_rod",tag:{display:{Name:'[{"text":"§6避雷針"}]'}},Count:1b}}] run function wrwrd:hirai
+execute as @e[type=armor_stand,tag=game,tag=st] run execute at @e[type=item,nbt={Item:{id:"minecraft:lightning_rod",tag:{display:{Name:'[{"text":"§6避雷針"}]'}},Count:1b}}] run function item:hirai
 execute at @e[type=armor_stand,tag=hirai] run particle end_rod ~ ~ ~ 0.1 0.3 0.1 0 1 normal
 execute at @e[type=armor_stand,tag=hirai] run execute as @a[tag=!hiraiyoke,scores={death=0},distance=..2] run execute as @e[type=armor_stand,tag=hirai] run effect give @a[tag=!hiraiyoke,scores={death=0},distance=..2] blindness 20 255 true
 execute at @e[type=armor_stand,tag=hirai] run execute as @a[tag=!hiraiyoke,scores={death=0},distance=..2] run execute as @e[type=armor_stand,tag=hirai] run effect give @a[tag=!hiraiyoke,scores={death=0},distance=..2] slowness 20 255 true
