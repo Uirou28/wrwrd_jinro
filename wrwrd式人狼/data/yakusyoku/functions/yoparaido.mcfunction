@@ -1,0 +1,7 @@
+execute as @a[tag=yopparai,scores={yoizamasi=1..}] run title @s title {"text": "酔いが醒めた!"}
+give @a[team=simin,tag=yopparai,scores={yoizamasi=1..}] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['{"text":"あなたは§a市民§rです","bold":true}']} 1
+give @a[team=kyoujin,tag=yopparai,scores={yoizamasi=1..}] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['{"text":"あなたは§8狂人§rです","bold":true}']} 1
+give @a[team=jinro,tag=yopparai,scores={yoizamasi=1..}] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['{"text":"§7あなたは§0人狼§7です\\n(クリックで仲間を確認)","bold":true,"clickEvent":{"action":"run_command","value":"/function main:jinro"}}']} 1
+give @a[team=yogen,tag=yopparai,scores={yoizamasi=1..}] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['[{"text":"あなたは§1予言者§rです 予言先を決めてください\\n(クリックで予言開始)","bold":true,"clickEvent":{"action":"run_command","value":"/function yogen:doyogen"}}]']} 1
+give @a[team=tantei,tag=yopparai,scores={yoizamasi=1..}] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['[{"text":"あなたは§6霊媒師§rです 霊媒先を決めてください\\n(クリックで霊媒開始)","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:dotantei"}}]']} 1
+execute as @a[tag=yopparai,scores={yoizamasi=1..}] run scoreboard objectives remove yoizamasi
