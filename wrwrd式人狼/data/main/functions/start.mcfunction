@@ -20,12 +20,14 @@ summon armor_stand 0 0 0 {Invisible:1b,Tags:["game"],ActiveEffects:[{Id:11,Ampli
 scoreboard players set @a death 0
 clear @a
 function main:load
+execute as @e[type=armor_stand,tag=killer] run function yakusyoku:killers
 tag @a add item
 scoreboard objectives remove time
 scoreboard objectives add time dummy
 function item:item
-function main:ingame
+execute as @a[tag=!killer] run scoreboard players add @e[type=armor_stand,tag=game] player 1
 function yakusyoku:yakusyoku
+execute as @e[type=armor_stand,tag=killer] run function yakusyoku:killers0
 function main:player1
 give @a[team=simin] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['{"text":"あなたは§a市民§rです","bold":true}']} 1
 give @a[team=kyoujin] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['{"text":"あなたは§8狂人§rです","bold":true}']} 1

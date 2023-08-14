@@ -15,12 +15,15 @@ execute at @a[nbt=!{Health:20f}] run particle minecraft:block redstone_block ~ ~
 kill @e[type=item,nbt={Item:{id:"minecraft:arrow"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:bow"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:written_book"}}]
-execute as @a run scoreboard players add @e[type=armor_stand,tag=game] player 1
 gamemode spectator @a[scores={death=1..}]
 execute as @a[scores={death=0},tag=mura] run scoreboard players add @e[type=armor_stand,tag=game] murakati 1
 execute as @a[scores={death=0},team=jinro] run scoreboard players add @e[type=armor_stand,tag=game] kurokati 1
-execute as @e[type=armor_stand,tag=game,scores={kurokati=0}] run function main:murakati
-execute as @e[type=armor_stand,tag=game,scores={murakati=0}] run function main:kurokati
+execute as @a[scores={death=0},tag=killer] run scoreboard players add @e[type=armor_stand,tag=game] killerkati 1
+execute as @e[type=armor_stand,tag=game,scores={kurokati=0},tag=!killerV] run function main:murakati
+execute as @e[type=armor_stand,tag=game,scores={murakati=0},tag=!killerV] run function main:kurokati
+execute as @e[type=armor_stand,tag=game,scores={kurokati=0},scores={killerkati=0},tag=killerV] run function main:murakati
+execute as @e[type=armor_stand,tag=game,scores={murakati=0},scores={killerkati=0},tag=killerV] run function main:kurokati
+execute as @e[type=armor_stand,tag=game,scores={murakati=0},scores={kurokati=0},tag=killerV] run function main:killerkati
 execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:sunflower",tag:{display:{Name:'[{"text":"§0§l停電スイッチ"}]'}},Count:1b}}] at @s run function item:teiden
 execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:end_crystal",tag:{display:{Name:'[{"text":"§eプロビデンスの眼光"}]'}},Count:1b}}] at @s run function item:konesima
 function item:dohirai
