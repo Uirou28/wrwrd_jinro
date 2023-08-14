@@ -1,7 +1,6 @@
-tag @r add killer
-tag @a[tag=killer] remove player
 team add killer
-team join killer @a[tag=killer]
+team join killer @r
+tag @a[team=killer] remove player
 team modify killer nametagVisibility never
 tag @e[type=armor_stand,tag=game] add killerV
 scoreboard objectives remove killerkati

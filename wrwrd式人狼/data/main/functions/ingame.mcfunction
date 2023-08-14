@@ -7,9 +7,9 @@ execute as @e[type=armor_stand,tag=game,scores={time=60}] run title @a title {"t
 execute as @e[type=armor_stand,tag=game,scores={time=60}] run playsound block.anvil.place block @a
 execute as @e[type=armor_stand,tag=game,scores={time=60}] run tag @e[type=armor_stand,tag=game] add st
 execute as @e[type=armor_stand,tag=game,tag=st] run scoreboard objectives remove time
-scoreboard players set @e[type=armor_stand,tag=game] player 0
 scoreboard players set @e[type=armor_stand,tag=game] murakati 0
 scoreboard players set @e[type=armor_stand,tag=game] kurokati 0
+scoreboard players set @e[type=armor_stand,tag=game] killerkati 0
 execute at @e[type=arrow,nbt={inGround:0b}] run particle cloud ~ ~ ~ 0.1 0.3 0.1 0 1 normal
 execute at @a[nbt=!{Health:20f}] run particle minecraft:block redstone_block ~ ~ ~ 2 3 2 0 10 force
 kill @e[type=item,nbt={Item:{id:"minecraft:arrow"}}]
@@ -18,7 +18,7 @@ kill @e[type=item,nbt={Item:{id:"minecraft:written_book"}}]
 gamemode spectator @a[scores={death=1..}]
 execute as @a[scores={death=0},tag=mura] run scoreboard players add @e[type=armor_stand,tag=game] murakati 1
 execute as @a[scores={death=0},team=jinro] run scoreboard players add @e[type=armor_stand,tag=game] kurokati 1
-execute as @a[scores={death=0},tag=killer] run scoreboard players add @e[type=armor_stand,tag=game] killerkati 1
+execute as @a[scores={death=0},team=killer] run scoreboard players add @e[type=armor_stand,tag=game] killerkati 1
 execute as @e[type=armor_stand,tag=game,scores={kurokati=0},tag=!killerV] run function main:murakati
 execute as @e[type=armor_stand,tag=game,scores={murakati=0},tag=!killerV] run function main:kurokati
 execute as @e[type=armor_stand,tag=game,scores={kurokati=0},scores={killerkati=0},tag=killerV] run function main:murakati
@@ -33,3 +33,4 @@ execute as @e[type=armor_stand,tag=kaigi,scores={kaigitime=1200..}] run function
 execute at @a[nbt={Health:0f},tag=!kansen] run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["sitai"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
 tag @a[nbt={Health:0f}] add kansen
 execute at @e[type=armor_stand,tag=sitai] run particle minecraft:block redstone_block ~ ~ ~ 1 1 1 1 20 force
+execute as @a[tag=yopparai,scores={yoizamasi=1..}] run function yakusyoku:yoparaido

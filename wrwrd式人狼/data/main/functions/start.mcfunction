@@ -21,13 +21,14 @@ scoreboard players set @a death 0
 clear @a
 function main:load
 execute as @e[type=armor_stand,tag=killer] run function yakusyoku:killers
+execute as @e[type=armor_stand,tag=youko] run function yakusyoku:youkos
 tag @a add item
 scoreboard objectives remove time
 scoreboard objectives add time dummy
 function item:item
 execute as @a[tag=!killer] run scoreboard players add @e[type=armor_stand,tag=game] player 1
 function yakusyoku:yakusyoku
-execute as @e[type=armor_stand,tag=killer] run function yakusyoku:killers0
+execute as @e[type=armor_stand,tag=killer] run tag @a[team=killer] add player
 function main:player1
 give @a[team=simin] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['{"text":"あなたは§a市民§rです","bold":true}']} 1
 give @a[team=kyoujin] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['{"text":"あなたは§8狂人§rです","bold":true}']} 1
