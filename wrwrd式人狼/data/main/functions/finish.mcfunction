@@ -58,6 +58,7 @@ team remove simin
 team remove tantei
 team remove yogen
 tag @a remove mura
+execute as @e[type=armor_stand,tag=killer] run function yakusyoku:killerf
 function main:load
 gamerule sendCommandFeedback true
 kill @e[type=armor_stand,tag=enmaku]
