@@ -23,6 +23,8 @@ function main:load
 execute as @e[type=armor_stand,tag=killer] run function yakusyoku:killers
 execute as @e[type=armor_stand,tag=youko] run function yakusyoku:youkos
 tag @a add item
+scoreboard objectives remove yumi
+scoreboard objectives add yumi used:bow
 scoreboard objectives remove time
 scoreboard objectives add time dummy
 function item:item
