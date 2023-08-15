@@ -11,4 +11,5 @@ execute at @a[tag=player9] run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["kai
 execute at @a[tag=player10] run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["kaigia"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
 tp @a @e[type=armor_stand,tag=kaigi,limit=1]
 tag @e[type=armor_stand,tag=kaigi] add st
+title @a title "会議が始まりました"
 clear @s written_book{display:{Name:'{"text":"緊急スイッチ","color":"dark_gray","bold":true}'}}
