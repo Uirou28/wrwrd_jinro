@@ -1,0 +1,11 @@
+tellraw @s [{"selector":"@a[tag=player1]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:aware1"}}]
+tellraw @s [{"selector":"@a[tag=player2]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:aware2"}}]
+tellraw @s [{"selector":"@a[tag=player3]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:aware3"}}]
+tellraw @s [{"selector":"@a[tag=player4]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:aware4"}}]
+tellraw @s [{"selector":"@a[tag=player5]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:aware5"}}]
+tellraw @s [{"selector":"@a[tag=player6]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:aware6"}}]
+tellraw @s [{"selector":"@a[tag=player7]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:aware7"}}]
+tellraw @s [{"selector":"@a[tag=player8]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:aware8"}}]
+tellraw @s [{"selector":"@a[tag=player9]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:aware9"}}]
+tellraw @s [{"selector":"@a[tag=player10]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function kaito:awarea"}}]
+clear @s written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'}}

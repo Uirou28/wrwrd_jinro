@@ -12,8 +12,7 @@ kill @e[type=armor_stand,tag=kaigi9]
 kill @e[type=armor_stand,tag=kaigia]
 kill @e[type=armor_stand,tag=sitai]
 tag @a remove kansen
-tag @a remove yetyogen
-tag @a remove yettan
+tag @a remove yet
 tag @a remove player
 tag @a remove player1
 tag @a remove player2
@@ -61,6 +60,7 @@ tag @a remove mura
 execute as @e[type=armor_stand,tag=killer] run function yakusyoku:killerf
 execute as @e[type=armor_stand,tag=yopparai] run function yakusyoku:yopparaif
 execute as @e[type=armor_stand,tag=youko] run function yakusyoku:youkof
+execute as @e[type=armor_stand,tag=kaito] run function yakusyoku:kaitof
 function main:load
 gamerule sendCommandFeedback true
 kill @e[type=armor_stand,tag=enmaku]

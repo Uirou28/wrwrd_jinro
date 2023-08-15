@@ -1,7 +1,7 @@
 team add jinro
-team join jinro @r[limit=2] 
+team join jinro @r[limit=2,team=!killer,team=!youko] 
 team modify jinro nametagVisibility hideForOtherTeams
-tag @r[limit=4,team=!jinro] add mura
+tag @r[limit=4,team=!jinro,team=!killer,team=!youko] add mura
 team add simin
 team join simin @r[tag=mura,limit=2]
 team modify simin nametagVisibility never

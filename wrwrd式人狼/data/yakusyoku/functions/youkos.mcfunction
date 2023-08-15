@@ -1,6 +1,5 @@
-
 team add youko
-team join youko @r[tag=!killer]
+team join youko @r[team=!killer]
 tag @a[team=youko] remove player
 team modify youko nametagVisibility never
 tag @e[type=armor_stand,tag=game] add youkoV

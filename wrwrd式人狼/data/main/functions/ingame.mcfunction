@@ -1,12 +1,13 @@
 scoreboard players add @e[type=armor_stand,tag=game] time 1
-execute as @e[type=armor_stand,tag=game,scores={time=20}] run title @a title {"text":"マイクラ"}
-execute as @e[type=armor_stand,tag=game,scores={time=20}] run playsound block.anvil.place block @a
-execute as @e[type=armor_stand,tag=game,scores={time=40}] run title @a title {"text": "人狼"}
-execute as @e[type=armor_stand,tag=game,scores={time=40}] run playsound block.anvil.place block @a
-execute as @e[type=armor_stand,tag=game,scores={time=60}] run title @a title {"text": "スタート"}
-execute as @e[type=armor_stand,tag=game,scores={time=60}] run playsound block.anvil.place block @a
-execute as @e[type=armor_stand,tag=game,scores={time=60}] run tag @e[type=armor_stand,tag=game] add st
+execute as @e[type=armor_stand,tag=game,scores={time=20},tag=!kaitoV] run title @a title {"text":"マイクラ"}
+execute as @e[type=armor_stand,tag=game,scores={time=20},tag=!kaitoV] run playsound block.anvil.place block @a
+execute as @e[type=armor_stand,tag=game,scores={time=40},tag=!kaitoV] run title @a title {"text": "人狼"}
+execute as @e[type=armor_stand,tag=game,scores={time=40},tag=!kaitoV] run playsound block.anvil.place block @a
+execute as @e[type=armor_stand,tag=game,scores={time=60},tag=!kaitoV] run title @a title {"text": "スタート"}
+execute as @e[type=armor_stand,tag=game,scores={time=60},tag=!kaitoV] run playsound block.anvil.place block @a
+execute as @e[type=armor_stand,tag=game,scores={time=60},tag=!kaitoV] run tag @e[type=armor_stand,tag=game] add st
 execute as @e[type=armor_stand,tag=game,tag=st] run scoreboard objectives remove time
+execute as @e[type=armor_stand,tag=kaito,tag=!st] run function kaito:junbi
 function main:arrow
 execute at @a[nbt=!{Health:20f}] run particle minecraft:block redstone_block ~ ~ ~ 2 3 2 0 10 force
 kill @e[type=item,nbt={Item:{id:"minecraft:arrow"}}]

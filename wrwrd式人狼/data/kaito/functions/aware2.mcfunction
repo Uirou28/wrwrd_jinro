@@ -1,0 +1,1 @@
+tellraw @s[tag=yet] [{"selector":"@a[tag=player2]"},{"text":"は人狼ではありません"}]

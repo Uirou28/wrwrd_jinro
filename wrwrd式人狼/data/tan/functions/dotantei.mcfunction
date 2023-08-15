@@ -2,7 +2,7 @@ tellraw @a[team=tantei] [{"selector":"@a[tag=player1]"},{"text":"を§l§1[占�
 tellraw @a[team=tantei] [{"selector":"@a[tag=player2]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan2"}}]
 tellraw @a[team=tantei] [{"selector":"@a[tag=player3]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan3"}}]
 tellraw @a[team=tantei] [{"selector":"@a[tag=player4]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan4"}}]
-tellraw @a[team=tantei] [{"selector":"@a[tag=player5]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan5"}}]
+tellraw @a[team=tantei] [{"selector":"@a[tag=player4]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan5"}}]
 tellraw @a[team=tantei] [{"selector":"@a[tag=player6]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan6"}}]
 tellraw @a[team=tantei] [{"selector":"@a[tag=player7]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan7"}}]
 tellraw @a[team=tantei] [{"selector":"@a[tag=player8]"},{"text":"を§l§1[占う]","bold":true,"clickEvent":{"action":"run_command","value":"/function tan:tan8"}}]
