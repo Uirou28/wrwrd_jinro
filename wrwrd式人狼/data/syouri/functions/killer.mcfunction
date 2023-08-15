@@ -1,3 +1,3 @@
 execute as @e[type=armor_stand,tag=game,scores={kurokati=0}] as @a[team=killer,scores={death=1..}] run function syouri:murakati
 execute as @e[type=armor_stand,tag=game,scores={murakati=0}] as @a[team=killer,scores={death=1..}] run function syouri:kurokati
-execute as @e[type=armor_stand,tag=game,scores={murakati=0},scores={kurokati=0}] as @a[team=killer,scores={death=0}] run function syouri:killerkati
+execute as @e[type=armor_stand,tag=game,scores={murakati=0,kurokati=0}] as @a[team=killer,scores={death=0}] run function syouri:killerkati
