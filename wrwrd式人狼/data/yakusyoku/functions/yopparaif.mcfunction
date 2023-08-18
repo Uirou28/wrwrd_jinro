@@ -1,3 +1,4 @@
 scoreboard objectives remove yoizamasi
-execute as @a[tag=yopparai] run me 酔っ払い
+tellraw @a [{"text":"酔っ払い:","color":"yellow","bold":true},{"selector":"@a[tag=yopparai]","color":"yellow","bold":true}]
 tag @a remove yopparai
+scoreboard objectives remove yoizamasi

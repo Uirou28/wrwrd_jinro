@@ -47,11 +47,11 @@ scoreboard objectives remove game
 scoreboard objectives remove death
 scoreboard objectives remove time
 gamerule sendCommandFeedback true
-execute as @a[team=simin] run say 市民
-execute as @a[team=yogen] run say 予言
-execute as @a[team=tantei] run say 霊媒
-execute as @a[team=jinro] run say 人狼
-execute as @a[team=kyoujin] run say 狂人
+tellraw @a [{"text":"人狼:","bold":true},{"selector":"@a[team=jinro]","color":"black","bold":true}]
+tellraw @a [{"text":"狂人:","bold":true},{"selector":"@a[team=kyoujin]","color":"dark_gray","bold":true}]
+tellraw @a [{"text":"予言者:","bold":true},{"selector":"@a[team=yogen]","color":"dark_blue","bold":true}]
+tellraw @a [{"text":"霊媒師:","bold":true},{"selector":"@a[team=tantei]","color":"gold","bold":true}]
+tellraw @a [{"text":"市民:","bold":true},{"selector":"@a[team=simin]","color":"green","bold":true}]
 team remove jinro
 team remove kyoujin
 team remove simin

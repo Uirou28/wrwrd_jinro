@@ -1,10 +1,10 @@
 scoreboard players add @e[type=armor_stand,tag=game] time 1
 execute as @e[type=armor_stand,tag=game,scores={time=20},tag=!kaitoV] run title @a title {"text":"マイクラ"}
-execute as @e[type=armor_stand,tag=game,scores={time=20},tag=!kaitoV] run playsound block.anvil.place block @a
+execute as @e[type=armor_stand,tag=game,scores={time=20},tag=!kaitoV] at @a run playsound block.anvil.place block @a
 execute as @e[type=armor_stand,tag=game,scores={time=40},tag=!kaitoV] run title @a title {"text": "人狼"}
-execute as @e[type=armor_stand,tag=game,scores={time=40},tag=!kaitoV] run playsound block.anvil.place block @a
+execute as @e[type=armor_stand,tag=game,scores={time=40},tag=!kaitoV] at @a run playsound block.anvil.place block @a
 execute as @e[type=armor_stand,tag=game,scores={time=60},tag=!kaitoV] run title @a title {"text": "スタート"}
-execute as @e[type=armor_stand,tag=game,scores={time=60},tag=!kaitoV] run playsound block.anvil.place block @a
+execute as @e[type=armor_stand,tag=game,scores={time=60},tag=!kaitoV] at @a run playsound block.anvil.place block @a
 execute as @e[type=armor_stand,tag=game,scores={time=60},tag=!kaitoV] run tag @e[type=armor_stand,tag=game] add st
 execute as @e[type=armor_stand,tag=game,tag=st] run scoreboard objectives remove time
 execute as @e[type=armor_stand,tag=kaito,tag=!st] run function kaito:junbi
