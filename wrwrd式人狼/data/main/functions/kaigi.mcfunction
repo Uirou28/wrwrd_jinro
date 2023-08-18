@@ -13,3 +13,4 @@ tp @a @e[type=armor_stand,tag=kaigi,limit=1]
 tag @e[type=armor_stand,tag=kaigi] add st
 title @a title "会議が始まりました"
 clear @s written_book{display:{Name:'{"text":"緊急スイッチ","color":"dark_gray","bold":true}'}}
+effect give @a weakness 60 255 true

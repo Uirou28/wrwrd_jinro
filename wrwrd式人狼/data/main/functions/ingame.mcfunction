@@ -13,6 +13,7 @@ execute at @a[nbt=!{Health:20f}] run particle minecraft:block redstone_block ~ ~
 kill @e[type=item,nbt={Item:{id:"minecraft:arrow"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:bow"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:written_book"}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:iron_sword"}}]
 gamemode spectator @a[scores={death=1..}]
 execute at @a[nbt={Health:0f},tag=!kansen] run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["sitai"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
 function syouri:main

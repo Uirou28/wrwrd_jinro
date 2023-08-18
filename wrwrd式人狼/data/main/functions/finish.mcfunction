@@ -46,6 +46,7 @@ gamemode creative @a
 scoreboard objectives remove game
 scoreboard objectives remove death
 scoreboard objectives remove time
+gamerule sendCommandFeedback true
 execute as @a[team=simin] run say 市民
 execute as @a[team=yogen] run say 予言
 execute as @a[team=tantei] run say 霊媒
@@ -62,5 +63,4 @@ execute as @e[type=armor_stand,tag=yopparai] run function yakusyoku:yopparaif
 execute as @e[type=armor_stand,tag=youko] run function yakusyoku:youkof
 execute as @e[type=armor_stand,tag=kaito] run function yakusyoku:kaitof
 function main:load
-gamerule sendCommandFeedback true
 kill @e[type=armor_stand,tag=enmaku]
