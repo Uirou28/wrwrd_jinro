@@ -58,6 +58,7 @@ team remove simin
 team remove tantei
 team remove yogen
 tag @a remove mura
+attribute @r generic.movement_speed modifier remove 0-0-0-0-0
 execute as @e[type=armor_stand,tag=killer] run function yakusyoku:killerf
 execute as @e[type=armor_stand,tag=yopparai] run function yakusyoku:yopparaif
 execute as @e[type=armor_stand,tag=youko] run function yakusyoku:youkof

@@ -10,10 +10,10 @@ execute as @e[type=armor_stand,tag=game,tag=st] run scoreboard objectives remove
 execute as @e[type=armor_stand,tag=kaito,tag=!st] run function kaito:junbi
 function main:arrow
 execute at @a[nbt=!{Health:20f}] run particle minecraft:block redstone_block ~ ~ ~ 2 3 2 0 10 force
-kill @e[type=item,nbt={Item:{id:"minecraft:arrow"}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:bow"}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:written_book"}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:iron_sword"}}]
+execute at @a[nbt={Health:0f}] run kill @e[type=item,nbt={Item:{id:"minecraft:arrow"}},distance=..2]
+execute at @a[nbt={Health:0f}] run kill @e[type=item,nbt={Item:{id:"minecraft:bow"}},distance=..2]
+execute at @a[nbt={Health:0f}] run kill @e[type=item,nbt={Item:{id:"minecraft:written_book"}},distance=..2]
+execute at @a[nbt={Health:0f}] run kill @e[type=item,nbt={Item:{id:"minecraft:iron_sword"}},distance=..2]
 gamemode spectator @a[scores={death=1..}]
 execute at @a[nbt={Health:0f},tag=!kansen] run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["sitai"],ActiveEffects:[{Id:11,Amplifier:5b,Duration:72000,ShowParticles:0b}]}
 function syouri:main
@@ -23,6 +23,8 @@ execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"m
 execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:end_crystal",tag:{display:{Name:'[{"text":"§eプロビデンスの眼光"}]'}},Count:1b}}] at @s run function item:konesima
 function item:dohirai
 function item:doenmaku
+attribute @r generic.movement_speed modifier remove 0-0-0-0-0
+attribute @a[nbt={Inventory:[{id:"minecraft:pumpkin_seeds"}]},limit=1] generic.movement_speed modifier add 0-0-0-0-0 "薬" 0.1 add
 scoreboard players add @e[type=armor_stand,tag=kaigi,tag=st] kaigitime 1
 execute as @e[type=armor_stand,tag=kaigi,scores={kaigitime=1200..}] run function main:kaigif
 tag @a[nbt={Health:0f}] add kansen

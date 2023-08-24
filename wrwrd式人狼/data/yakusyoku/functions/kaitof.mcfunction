@@ -2,5 +2,6 @@ tellraw @a [{"text":"怪盗:","color":"white","bold":true},{"selector":"@a[tag=k
 tag @a[tag=kaito] remove kaito
 tag @e[type=armor_stand,tag=game] remove kaitoV
 tag @e[type=armor_stand,tag=kaito] remove st
-tag @a remove yogenk
-tag @a remove tank
+tag @a remove ubwr
+tag @a remove killerk
+tag @a remove youkok
