@@ -7,3 +7,4 @@ give @a[team=tantei,tag=yopparai,scores={yoizamasi=1..}] written_book{display:{N
 give @a[team=killer,tag=yopparai,scores={yoizamasi=1..}] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['{"text":"あなたは§4シリアルキラー§rです\\n§4植物のような平穏な人生を目指して","bold":true}']} 1
 give @a[team=killer,tag=yopparai,scores={yoizamasi=1..}] iron_sword{display:{Name:'{"text":"ほんもののナイフ","color":"dark_red","bold":true}',Lore:['{"text":"ATK 99","color":"dark_red","bold":true}','{"text":"ようやくみつけた","color":"dark_red","bold":true}']},HideFlags:39,RepairCost:10000,Unbreakable:1b,Damage:250,Enchantments:[{id:"minecraft:sharpness",lvl:64s}]} 1
 give @a[team=youko,tag=yopparai,scores={yoizamasi=1..}] written_book{display:{Name:'{"text":"役職本","color":"dark_gray","bold":true}'},HideFlags:39,title:"役職本",author:"GM",pages:['{"text":"§lあなたは§5妖狐§r§lです\\n§4勝てばよかろうなのだ"}']} 1
+scoreboard players set @s yoizamasi 0

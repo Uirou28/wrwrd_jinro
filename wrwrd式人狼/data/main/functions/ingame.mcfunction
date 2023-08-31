@@ -23,8 +23,8 @@ execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"m
 execute as @e[type=armor_stand,tag=game,tag=st] as @e[type=item,nbt={Item:{id:"minecraft:end_crystal",tag:{display:{Name:'[{"text":"§eプロビデンスの眼光"}]'}},Count:1b}}] at @s run function item:konesima
 function item:dohirai
 function item:doenmaku
-attribute @r generic.movement_speed modifier remove 0-0-0-0-0
-attribute @a[nbt={Inventory:[{id:"minecraft:pumpkin_seeds"}]},limit=1] generic.movement_speed modifier add 0-0-0-0-0 "薬" 0.1 add
+execute as @a run attribute @s generic.movement_speed modifier remove 0-0-0-0-0
+execute as @a[nbt={Inventory:[{id:"minecraft:pumpkin_seeds"}]}] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "薬" 0.1 add
 scoreboard players add @e[type=armor_stand,tag=kaigi,tag=st] kaigitime 1
 execute as @e[type=armor_stand,tag=kaigi,scores={kaigitime=1200..}] run function main:kaigif
 tag @a[nbt={Health:0f}] add kansen

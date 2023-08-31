@@ -8,3 +8,6 @@ function item:switch
 function item:imb
 function item:hiraigive
 function item:enmaku
+function item:megante
+function item:medis
+function item:dassyutu

@@ -1,4 +1,5 @@
 kill @e[type=armor_stand,tag=game]
+execute at @e[type=armor_stand,tag=hirai] run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace lightning_rod
 kill @e[type=armor_stand,tag=hirai]
 kill @e[type=armor_stand,tag=kaigi1]
 kill @e[type=armor_stand,tag=kaigi2]
